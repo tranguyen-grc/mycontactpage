@@ -1,0 +1,376 @@
+/*This is my 201 Contact Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------- This is the beginning of my 201 Contact Web Page Project ------------ */
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background-image: url("images/paper-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+
+
+}
+
+
+/*logo id*/
+#logo {
+	width: 5%;
+	min-width: 70px;
+	text-align: center;
+	margin-top: 4em;
+	margin-left: 4em;
+}
+
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 6em;
+	margin: 0px auto 20px auto;
+	color: black;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.5em;
+	line-height: 1.4;
+	color: black;
+	padding: 0px 0px;
+	margin: 0px auto 0px auto;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+	line-height: 1.6;
+	color: black;
+}
+
+
+/*navigation element*/
+nav {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+	width: 600px;
+	text-align: center;
+	margin-top: 3em;
+	margin-right: 1em;
+	position: fixed;
+	top: 0;
+	right: 0;
+
+}
+
+nav li {
+	display: inline; /*block lvl elems display next to e/other*/
+}
+
+nav a {
+	inline-block;
+	margin: 0 1em;
+	padding: 10px; /*add space around e/link*/
+}
+
+a {
+	color: black;
+	text-decoration: none; /*removes underline*/
+	font-weight: bold;
+}
+
+/*reg nav hover fx*/
+a:hover {
+	color: #8e78ff;
+}
+
+
+/*button nav elements for "email me"*/
+nav btn {
+	display: inline-block;
+	margin-left: 1em;
+	padding: 10px; /*add space around e/link*/
+	background: #8e78ff;
+	border-radius: 30px; /*rounds the bg box*/
+	border: 2px solid #8e78ff; /*creates purple stroke around border*/
+	transition: 0.3s ease;
+}
+
+/*button*/
+btn {
+	color: black;
+	text-decoration: none; /*removes underline*/
+	font-weight: bold;
+}
+
+/*button hover fx*/
+btn:hover {
+	color: #8e78ff;
+	background-color: white;
+}
+
+
+/*overrides preset div to position elements accordingly*/
+div {
+	position: absolute;
+}
+
+/*portrait id*/
+#bottom-right {
+	bottom: 0;
+	right: 5%;
+	margin-right: 4em;
+	opacity: 80%;
+
+	/*fade in transition*/
+	animation: fadeIn 5s;
+	-webkit-animation: fadeIn 5s;
+	-moz-animation: fadeIn 5s;
+	-o-animation: fadeIn 5s;
+	-ms-animation: fadeIn 5s;
+}
+
+/*left div id*/
+#left {
+	/*responsive div*/
+	width: 40%;
+	min-width: 300px;
+
+	/*positions on the left with space from the top*/
+	left: 0;
+	top: 40%;
+	margin-left: 4em;
+
+	/*fade in transition*/
+	animation: fadeIn 5s;
+	-webkit-animation: fadeIn 5s;
+	-moz-animation: fadeIn 5s;
+	-o-animation: fadeIn 5s;
+	-ms-animation: fadeIn 5s;
+}
+
+/*middle circle id*/
+#circle {
+	/*positions near the left text block*/
+	left: 22%;
+	top: 27%;
+	margin-left: 4em;
+
+	/*fade in transition*/
+	animation: fadeIn 7s;
+	-webkit-animation: fadeIn 7s;
+	-moz-animation: fadeIn 7s;
+	-o-animation: fadeIn 7s;
+	-ms-animation: fadeIn 7s;
+}
+
+/*bottom circle id*/
+#past-bottom-right {
+	/*positions past the bottom left corner*/
+	bottom: -12%;
+	right: -12%;
+
+	/*fade in transition*/
+	animation: fadeIn 7s;
+	-webkit-animation: fadeIn 7s;
+	-moz-animation: fadeIn 7s;
+	-o-animation: fadeIn 7s;
+	-ms-animation: fadeIn 7s;
+}
+
+/*dif types of keyframes ->ensures browser compatibility*/
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-ms-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
